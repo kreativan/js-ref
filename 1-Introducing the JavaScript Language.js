@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------
-    # Objects
+# Objects
 -------------------------------------------------------------*/
 
 // empty object
@@ -22,7 +22,7 @@ delete car.year
 car2 = car;
 
 /*-------------------------------------------------------------
-    # Arrays
+# Arrays
 -------------------------------------------------------------*/
 
 // empty array
@@ -59,7 +59,7 @@ cars.shift();
 // check mozila ref. for more...
 
 /*-------------------------------------------------------------
-    # Regex
+# Regex
 -------------------------------------------------------------*/
 
 var string = "What im looking for";
@@ -83,7 +83,7 @@ var regex = /Wh./;
 regex.test(string)
 
 /*-------------------------------------------------------------
-    # Comparison
+# Comparison
 -------------------------------------------------------------*/
 1 === 1
 -> true
@@ -95,7 +95,7 @@ regex.test(string)
 -> false
 
 /*-------------------------------------------------------------
-    # Operators
+# Operators
 -------------------------------------------------------------*/
 
 /**
@@ -127,3 +127,29 @@ counter -= 1;
 counter--;
 // multiply
 counter *= 2;
+
+/*-------------------------------------------------------------
+# Logical Operators
+-------------------------------------------------------------*/
+var animal1 = "monkey";
+var animal2 = "bear";
+var animal3 = "tiger";
+
+animal1 == "monkey" && animal2 == "bear"
+-> true
+animal1 == "ape" && animal2 == "bear"
+-> false
+animal1 == "ape" || animal2 == "bear"
+-> true
+
+// && are always evaluated before ||
+animal1 == "ape" || animal2 == "bear" && animal3 == "tiger"
+-> true
+
+// NOT
+!(animal1 === "monkey")
+-> false
+!(animal1 === "ape")
+-> true
+!(animal1 === "ape" && animal2 === "tiger")
+-> true
