@@ -86,13 +86,44 @@ regex.test(string)
     # Comparison
 -------------------------------------------------------------*/
 1 === 1
-true
-
+-> true
 1 !== 1
-false
-
+-> false
 1 < 2
-true
-
+-> true
 1 > 2
-false
+-> false
+
+/*-------------------------------------------------------------
+    # Operators
+-------------------------------------------------------------*/
+
+/**
+ *  Even odd
+ *  0 = even, 1 = odd
+ *
+ */
+20 % 2
+-> 0
+19 % 2
+-> 1
+
+/**
+ *  increasement
+ *
+ */
+var counter  = 0;
+counter = counter + 1;
+-> 1
+// shorthand
+counter += 1;
+// or
+counter += 5;
+// increase by 1
+counter++;
+
+// decreasement
+counter -= 1;
+counter--;
+// multiply
+counter *= 2;
