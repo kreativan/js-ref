@@ -153,3 +153,26 @@ animal1 == "ape" || animal2 == "bear" && animal3 == "tiger"
 -> true
 !(animal1 === "ape" && animal2 === "tiger")
 -> true
+
+/*-------------------------------------------------------------
+# if - else
+-------------------------------------------------------------*/
+var answer = window.confirm("Click OK, get true. Click cancel, get false.");
+
+if (answer === true) {
+    console.log("You clicked OK");
+} else {
+    console.log("You clicked Cancel");
+}
+
+var answer = window.prompt("Type YES, NO or MAYBE. Then click OK.");
+
+if (answer === "YES") {
+    console.log("you said YES :)");
+} else if (answer === "MAYBE") {
+    console.log("you said MAYBE :| ");
+} else if (answer === "NO") {
+    console.log("you said NO :(");
+} else {
+    console.log("Hey! Are you messing with me?");
+}
