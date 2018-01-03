@@ -81,3 +81,18 @@ regex.test(string)
 // Dot (.) means any char
 var regex = /Wh./;
 regex.test(string)
+
+/*-------------------------------------------------------------
+    # Comparison
+-------------------------------------------------------------*/
+1 === 1
+true
+
+1 !== 1
+false
+
+1 < 2
+true
+
+1 > 2
+false
